@@ -1,0 +1,217 @@
+body {
+	margin: -35px;
+	padding: 50px;
+	color: #000;
+  	font-family: 'Quicksand', sans-serif;
+}
+
+/* ---- Set up site grid ---- */
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 300px 2fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"logo banner banner"
+		"nav nav nav"
+		"main main side"
+		"footer footer footer";
+	grid-gap: 4px;
+}
+
+/* ---- End of grid setup ---- */
+
+/* Area Coloring */
+
+/* Set font on dark areas to white */
+.logo, .banner, .side, .footer {
+	color: #fff;	
+}
+
+/* -000- Area styling -000- */
+
+.box {
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #ddd;
+}
+
+/* logo, banner, and footer background are the same */
+.logo, .banner, .footer {
+  background-color: #2a334b; /* Dark navy */
+}
+
+.logo {
+	grid-area: logo;
+	padding: 0;
+	height: 120px;
+	width: 300px;
+	background-image: url(https://projectspace.nz/xfpodmcv/Angelique_Cybersafety_DT2/img/edited-logo.gif);	
+}
+
+.banner {
+	grid-area: banner;
+	height: 80px;
+	line-height: 35px;
+	font-size: 120%
+}
+
+.nav {
+	grid-area: nav;
+	background-color: #909dbb; /* Blue-ish */
+	font-family: 'Source Code Pro', monospace;
+	font-size: 120%;
+	text-align: center;
+}
+
+.main {
+	grid-area: main;
+  	background-color: #f3f9ff; /* Very pale blue */
+}
+
+.side {
+	grid-area: side;
+  	background-color: #576079; /* Light navy */
+	color: #909dbb; /* Blue-ish */
+	font-family: 'Source Code Pro', monospace;
+	font-size: 90%
+}
+
+.footer {
+	grid-area: footer;
+	text-align: center;
+	font-family: 'Source Code Pro', monospace;
+}
+
+/* -000- End of area styling -000- */
+
+h1, h2, h3, h4 {
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* Navigation Links */
+.nav a {font-weight: bold; text-decoration: none;}
+.nav a:link, .nav a:visited {color: #2a334b;} /* dark navy */
+.nav a:hover {color: #fff;} /* white */
+
+/* links in page */
+a {font-weight: bold;}
+a:link{color: #2a334b;} /* dark navy */
+a:visited{color: #576079;} /* light navy */
+a:hover{color: #909dbb;} /* blue-ish */
+
+/* links in side */
+.side a {text-decoration: none;}
+.side a:link{color: #909dbb;} /* blue-ish */
+.side a:visited{color: #909dbb;} /* blue-ish */
+.side a:hover{color: #f3f9ff;} /* very pale blue */
+
+/* Contact Form Syling */
+.contact{
+	width: 100%;
+}
+
+/* All images responsive */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Side bar images */
+.img-circle {
+	border-radius: 50%;
+	max-width: 85%;
+	height: auto;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+/* Center images */
+.center_image {
+	text-align: center;
+}
+
+/* Rounded corner images */
+.img-round{
+    border-radius: 10px;
+}
+
+/* Button Class */
+.button {
+	background-color: #909dbb; /* Blue-ish */
+	color: #2a334b; /* Dark navy */
+	padding: 16px;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 100%;
+	border: none;
+	cursor: pointer;
+}
+
+
+/* Contact Form Styling */
+iframe{
+    border-width: 0px;
+	overflow: hidden;
+	margin: 0;
+	width: 800px;
+	height: 600px;
+}
+
+
+/* Dropdown Navigation */
+
+/* Styles the dropdown button */
+.dropbtn {
+	background-color: #909dbb; /* Blue-ish */
+	color: #2a334b; /* Dark navy */
+	padding: 16px;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 100%;
+	border: none;
+	cursor: pointer;
+}
+
+/* Container to position dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Dropdown link color change on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+} 
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-content { 
+	display: block;
+}
+
+
+/* Scrolling Progress Indicator Styling */
+.progress-bar {
+    background: #9d9dff; /* Blue */
+    height: 10px;
+    width: 0%;
+	max-width: 97.5%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
