@@ -1,1 +1,1 @@
-Old school project. https://ahulot.github.io/2022-WebDev-Internal/
+Old school project. https://anqilique.github.io/2022-WebDev-Internal-Public/
